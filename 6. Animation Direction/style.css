@@ -1,0 +1,63 @@
+/* Base Styles */
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.grass, .sky, .road{
+    position: relative;
+}
+.sky{
+    height: 40%;
+    background-color: skyblue;
+}
+.grass{
+    height: 30%;
+    background-color: seagreen;
+}
+.road{
+    height: 30%;
+    background-color: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+}
+.lines{
+    box-sizing: border-box;
+    border: 5px dashed white;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+/* Elements to Animate */
+
+.mario{
+    position: absolute;
+    top: -60px;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+.luigi{
+    position: absolute;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+/* Keyframes */
+
+@keyframes drive{
+    from{transform: translateX(-200px)}
+    to{transform: translateX(2000px)}
+}
