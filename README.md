@@ -14,5 +14,3 @@
 10. making a pop up
 11. making a shopping cart *(might not work)*
 12. flipping card animations
-
-#### Learnings from [TheNetNinja](https://www.youtube.com/c/TheNetNinja)
